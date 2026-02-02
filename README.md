@@ -1,12 +1,12 @@
 📊 AI-Powered Financial Health Assessment Platform for SMEs
 
-demo video: 
+demo video: https://drive.google.com/file/d/1u983osuvai0SNlJbYx3USH-WP0r9JFM0/view?usp=sharing
 
 deployment:-
 backend:https://financial-health-tool-t9v2.onrender.com
 frontend:https://financial-health-tool-lake.vercel.app/
 
-github repository:
+github repository:https://github.com/Devunidaya/financial_health_tool.git
 
 🧾 Overview
 
