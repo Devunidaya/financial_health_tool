@@ -39,6 +39,19 @@ def home():
 # EXPORT PDF
 # =============================
 @app.get("/export")
+# def export_report():
+
+#     if not last_result:
+#         return {"error": "Run analysis first before exporting"}
+
+#     filename = create_report(last_result)
+
+#     return FileResponse(
+#         filename,
+#         media_type="application/pdf",
+#         filename="financial_report.pdf"
+#     )
+
 def export_report():
 
     if not last_result:
@@ -47,12 +60,13 @@ def export_report():
     filename = create_report(last_result)
 
     return FileResponse(
-        filename,
-        media_type="application/pdf",
-        filename="financial_report.pdf"
-    )
-
-
+    filename,
+    media_type="application/pdf",
+    filename="financial_report.pdf",
+    headers={
+        "Content-Disposition": "attachment; filename=financial_report.pdf"
+    }
+)
 # =============================
 # ANALYZE CSV
 # =============================
