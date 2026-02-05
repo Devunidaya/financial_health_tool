@@ -153,11 +153,18 @@ export default function App() {
             <p>{data.ai_insights}</p>
           </div>
 
-          {/* ================= EXPORT ================= */}
-          <div className="card center">
-            <button onClick={() => fetch("https://financial-health-tool-t9v2.onrender.com/export")}>
-              📄 Export PDF Report
-            </button>
+                    {/* ================= EXPORT ================= */}
+        <div className="card">
+         <button
+  onClick={() =>
+    window.open(
+      "https://financial-health-tool-t9v2.onrender.com/export",
+      "_blank"
+    )
+  }
+>
+  📄 Export PDF Report
+</button>
           </div>
         </>
       )}
